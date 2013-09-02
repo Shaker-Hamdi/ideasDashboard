@@ -14,7 +14,7 @@ class DefaultController extends Controller
     		$username = $request->get('username');
     		$password = $request->get('password');
 
-	    	$em = $this->getDoctrine()->getEntityManager();
+	    	$em = $this->getDoctrine()->getManager();
 	    	$repository = $em->getRepository('AqarmapDashboardBundle:Users');
 
 	    	$user = $repository->findOneBy(array('username'=>$username, 'password'=>$password));
@@ -31,26 +31,6 @@ class DefaultController extends Controller
     } // endix action
 
 
-    public function registerAction(Request $request) {
-
-    	if($request->getMethod() == "POST") {
-    		$username = $request->get('username');
-    		$email = $request->get('email');
-    		$password = $request->get('password');
-    		$role = "memeber";
-
-    		$user = new Users();
-    		$user->setUsername($username);
-    		$user->setPassword($password);
-    		$user->setEmail($email);
-    		$user->setRole($role);
-
-    		$em = $this->getDoctrine()->getEntityManager();
-    		$em->persist($user);
-    		$em->flush();
-    		return $this->render('AqarmapDashboardBundle:Default:index.html.twig');
-    	}
-
-    }// register action
+    
 
 }

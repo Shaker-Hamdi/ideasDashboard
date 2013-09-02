@@ -2,7 +2,7 @@ aqarmap_dashboard_loginPage:
     pattern:  /loginOrJoin
     defaults: { _controller: AqarmapDashboardBundle:Default:index }
 
-aqarmap_dashboard_registerPage:
-    pattern:  /loginOrJoin
-    defaults: { _controller: AqarmapDashboardBundle:Default:register }
+AqarmapDashboardBundle_users:
+    resource: "@AqarmapDashboardBundle/Resources/config/routing/users.yml"
+    prefix:   /users
 
