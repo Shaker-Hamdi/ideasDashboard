@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aqarmap: Ideas Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="{{ asset('ideasDashboard/css/bootstrap.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('ideasDashboard/css/my_styles.css') }}" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="components/js/html5shiv.js"></script>
+      <script src="components/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  {% block body %}
+  {% endblock %}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ asset('ideasDashboard/js/jquery.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ asset('ideasDashboard/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('ideasDashboard/js/my_js.js') }}"></script>
+  </body>
+</html>

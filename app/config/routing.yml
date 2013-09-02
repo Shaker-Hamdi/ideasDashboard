@@ -1,0 +1,4 @@
+aqarmap_dashboard:
+    resource: "@AqarmapDashboardBundle/Resources/config/routing.yml"
+    prefix:   /
+

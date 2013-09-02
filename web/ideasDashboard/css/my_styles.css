@@ -1,0 +1,177 @@
+/* ====== Variables ====== */
+/* ====== Variables ====== */
+/* ====== Mixins ====== */
+.border-but-top {
+	border: solid 1px #c5c5c5;
+	border-top: none;
+}
+
+.no-text {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+}
+
+/* ====== Basic Styles ====== */
+#loginPage .panel {
+	background: #fafafa;
+}
+
+#loginPage .panel-default > .panel-heading {
+	background: #656565;
+}
+
+#loginPage .panel-default > .panel-heading h4 {
+	color: #fff;
+}
+
+.nav-tabs > li.active > a,#loginPage .nav-tabs > li.active > a:hover,#loginPage .nav-tabs > li.active > a:active,#loginPage .nav-tabs > li.active > a:visited {
+	background: #fafafa;
+	border-bottom: none;
+	border-color: #c5c5c5;
+	color: #83b8e4;
+}
+
+.nav-tabs > li > a {
+	background: #eeeeee;
+	color: #656565;
+	border: solid 1px #c5c5c5;
+}
+
+.nav-tabs > li > a:hover {
+	background: #ff714e;
+	color: #fff;
+}
+
+div.tab-content {
+	border: solid 1px #c5c5c5;
+	border-top: none;
+	padding: 20px;
+	margin-top: -1px;
+}
+
+#loginPage div.tab-content .btn {
+	float: right;
+}
+
+.btn-primary {
+	background: #83b8e4;
+	border: none;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+	background: #ff714e;
+	border: none;
+}
+
+/* ====== Logo ====== */
+div.logo {
+	margin: 30px 0 50px 0;
+}
+
+div.logo a {
+	display: block;
+	width: 220px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+	border-bottom: solid 1px #c5c5c5;
+	padding-bottom: 10px;
+}
+
+div.logo a h1 {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	width: 220px;
+	height: 45px;
+	background: url(../images/logo.png) left top no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+div.logo h3 {
+	text-align: center;
+	margin: 10px 0 0 0;
+	padding: 0;
+	color: #c5c5c5;
+}
+
+/* ====== DashBar ====== */
+section.dashBar {
+	background: #eeeeee;
+	border-bottom: solid 4px #c5c5c5;
+	padding: 10px 0 10px 0;
+}
+
+.glyphicon {
+	padding-right: 10px;
+}
+
+section.dashBar .col-lg-4 p {
+	padding-top: 15px;
+}
+
+section.dashBar .form-group {
+	margin: 0;
+	padding: 0;
+}
+
+section.dashBar .form-group h3 {
+	margin: 10px 0 0 0;
+	text-align: left;
+	padding: 0;
+}
+
+section.dashBar .form-group input,section.dashBar .form-group button {
+	margin: 5px 0 0 0;
+}
+
+section.dashBar .form-group button span.glyphicon {
+	padding-right: 0;
+	font-size: 16px;
+}
+
+/* ====== Ideas Content ====== */
+#ideasTab {
+	padding-right: 0;
+}
+
+/* ====== Ideas Content ====== */
+section.ideasContent {
+	background: #fafafa;
+	margin-top: 50px;
+}
+
+section.ideasContent .tab-content {
+	border: solid 1px #c5c5c5;
+	border-top: none;
+}
+
+#homePage .tab-content .panel {
+	padding: 0;
+}
+
+#homePage .tab-content .panel-heading {
+	background: #007cbe;
+}
+
+#homePage .tab-content .panel-heading h3 {
+	color: #fff;
+}
+
+#homePage .tab-content .panel-heading h3 span {
+	float: right;
+}
+
+#homePage .readMore {
+	float: right;
+}
+
+div.ideas-pagination {
+	text-align: center;
+	clear: both;
+}
+
+#homePage .tab-content .panel-body h2 {
+	margin-top: 0;
+}

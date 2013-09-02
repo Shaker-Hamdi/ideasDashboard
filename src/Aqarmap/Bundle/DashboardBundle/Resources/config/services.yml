@@ -1,0 +1,7 @@
+parameters:
+#    aqarmap_dashboard.example.class: Aqarmap\Bundle\DashboardBundle\Example
+
+services:
+#    aqarmap_dashboard.example:
+#        class: %aqarmap_dashboard.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

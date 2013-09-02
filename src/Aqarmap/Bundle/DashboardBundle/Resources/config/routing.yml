@@ -1,0 +1,8 @@
+aqarmap_dashboard_loginPage:
+    pattern:  /loginOrJoin
+    defaults: { _controller: AqarmapDashboardBundle:Default:index }
+
+aqarmap_dashboard_registerPage:
+    pattern:  /loginOrJoin
+    defaults: { _controller: AqarmapDashboardBundle:Default:register }
+

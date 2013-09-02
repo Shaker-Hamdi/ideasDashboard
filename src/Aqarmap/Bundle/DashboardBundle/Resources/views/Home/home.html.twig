@@ -1,0 +1,126 @@
+{% extends 'AqarmapDashboardBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+<body id="homePage">
+    <div class="container">
+
+      <section class="header row">
+        <div class="logo col-lg-12">
+          <a href="#">
+            <h1>Aqarmap</h1>
+          </a>
+          <h3>IDEAS DASHBOARD</h3>
+        </div><!-- logo -->
+      </section><!-- header -->
+
+      <section class="dashBar row">
+
+        <div class="col-lg-4">
+          <p>Welcom Back, {{ username }} | <a href="#">LOGOUT</a></p>
+        </div><!-- welcome message -->
+
+        <div class="col-lg-8">
+
+          <div class="col-lg-4">
+            <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus"></span>POST NEW IDEA</button>
+          </div><!-- add idea btn -->
+
+          <div class="col-lg-8">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <h3 class="col-lg-2">OR</h3>
+                <div class="col-lg-8">
+                  <input type="text" class="form-control" name="searchTerm" id="inputUsername" placeholder="Search for one ...">
+                </div>
+                <div class="col-lg-2">
+                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div><!-- search and add idea -->
+
+      </section><!-- DashBar -->
+
+      <section class="ideasContent row">
+
+        <ul class="nav nav-tabs nav-justified col-lg-12 clearfix" id="ideasTab">
+          <li class="active"><a href="#recent" data-toggle="tab">Recent</a></li>
+          <li><a href="#general" data-toggle="tab">General</a></li>
+          <li><a href="#office" data-toggle="tab">Office Space</a></li>
+          <li><a href="#sales" data-toggle="tab">Sales</a></li>
+          <li><a href="#marketing" data-toggle="tab">Marketing</a></li>
+          <li><a href="#development" data-toggle="tab">Development</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active clearfix" id="recent">
+
+            <div class="panel panel-default col-lg-offset-2 col-lg-8 clearfix">
+              <div class="panel-heading">
+                <h3 class="panel-title">Nasser Poste in "General"<span>24-7-2013</span></h3>
+              </div>
+              <div class="panel-body">
+                <h2>Idea Title Goes Here</h2>    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="panel-footer">
+                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>33</a>
+                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-comment"></span>10</a>
+                <a href="#" class="btn btn-primary readMore">Read full Idea</a>
+              </div>
+            </div>
+
+            <div class="panel panel-default col-lg-offset-2 col-lg-8 clearfix">
+              <div class="panel-heading">
+                <h3 class="panel-title">Nasser Poste in "General"<span>24-7-2013</span></h3>
+              </div>
+              <div class="panel-body">
+                <h2>Idea Title Goes Here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="panel-footer">
+                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>33</a>
+                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-comment"></span>10</a>
+                <a href="#" class="btn btn-primary readMore">Read full Idea</a>
+              </div>
+            </div>
+
+            <div class="col-lg-12 clearfix ideas-pagination">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+
+          </div><!-- recent content -->
+
+          <div class="tab-pane clearfix" id="general">
+
+          </div><!-- general content -->
+
+        </div>
+
+      </section><!-- content -->
+
+    </div><!-- container -->
+
+{% endblock %}
