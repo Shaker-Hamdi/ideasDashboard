@@ -2,6 +2,10 @@ aqarmap_dashboard_loginPage:
     pattern:  /loginOrJoin
     defaults: { _controller: AqarmapDashboardBundle:Default:index }
 
+aqarmap_dashboard_homePage:
+    pattern:  /home/{username}
+    defaults: { _controller: AqarmapDashboardBundle:Default:home }
+
 AqarmapDashboardBundle_users:
     resource: "@AqarmapDashboardBundle/Resources/config/routing/users.yml"
     prefix:   /users

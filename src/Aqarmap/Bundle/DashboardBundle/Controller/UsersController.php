@@ -44,7 +44,8 @@ class UsersController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('users_show', array('id' => $entity->getId())));
+            // return $this->render('AqarmapDashboardBundle:Home:home.html.twig', array('username'=>$entity->getUsername()));
+            return $this->redirect($this->generateUrl('aqarmap_dashboard_homePage', array('username' => $entity->getUsername())));
         }
 
         return $this->render('AqarmapDashboardBundle:Users:new.html.twig', array(
@@ -67,7 +68,7 @@ class UsersController extends Controller
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', 'submit', array('label' => 'Register'));
 
         return $form;
     }

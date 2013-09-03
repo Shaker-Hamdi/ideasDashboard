@@ -20,7 +20,8 @@ class DefaultController extends Controller
 	    	$user = $repository->findOneBy(array('username'=>$username, 'password'=>$password));
 
 	    	if($user) {
-	    		return $this->render('AqarmapDashboardBundle:Home:home.html.twig', array('username'=>$user->getUsername()));
+                return $this->redirect($this->generateUrl('aqarmap_dashboard_homePage', array('username' => $user->getUsername())));
+	    		//return $this->render('AqarmapDashboardBundle:Home:home.html.twig', array('username'=>$user->getUsername()));
 	    	} 
 
     	} else {
@@ -29,6 +30,10 @@ class DefaultController extends Controller
 
         
     } // endix action
+
+    public function homeAction($username) {
+         return $this->render('AqarmapDashboardBundle:Home:home.html.twig', array('username'=>$username));
+    }
 
 
     

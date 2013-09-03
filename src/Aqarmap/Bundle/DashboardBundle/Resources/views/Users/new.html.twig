@@ -1,15 +1,84 @@
-{% extends '::base.html.twig' %}
+{% extends 'AqarmapDashboardBundle:Default:base.html.twig' %}
 
 {% block body -%}
-    <h1>Users creation</h1>
 
-    {{ form(form) }}
+<body id="loginPage">
+    <div class="container">
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('users') }}">
-            Back to the list
-        </a>
-    </li>
-</ul>
+      <section class="header row">
+        <div class="logo col col-lg-12">
+          <a href="#">
+            <h1>Aqarmap</h1>
+          </a>
+          <h3>IDEAS DASHBOARD</h3>
+        </div><!-- logo -->
+      </section><!-- header -->
+
+      <section class="content row">
+        <div class="row clearfix">
+          <div class="col col-lg-8 col-lg-offset-2">
+            <div class="panel panel-default">
+              <div class="panel-heading"><h4>Choose your action</h4></div>
+              <div class="panel-body">
+
+                <ul class="nav nav-tabs nav-justified" id="loginTab">
+                  <li><a href="{{ path('aqarmap_dashboard_loginPage') }}" data-toggle="">Login</a></li>
+                  <li class="active"><a href="#register" data-toggle="tab">Register</a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                  <div class="tab-pane active" id="register">
+
+                    {{ form(form) }}
+                    
+                    <!-- <form class="form-horizontal" role="form" method="POST" action="">
+                      <div class="form-group">
+                        <label for="inputUsername" class="col-lg-3 control-label">Username:</label>
+                        <div class="col-lg-9">
+                          <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail1" class="col-lg-3 control-label">Email:</label>
+                        <div class="col-lg-9">
+                          <input type="email" class="form-control" name="email" id="inputEmail1" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputConfirmEmail1" class="col-lg-3 control-label">Confirm Email:</label>
+                        <div class="col-lg-9">
+                          <input type="email" class="form-control" name="confirm_email" id="inputConfirmEmail1" placeholder="Confirm Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword" class="col-lg-3 control-label">Password:</label>
+                        <div class="col-lg-9">
+                          <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputConfirmPassword" class="col-lg-3 control-label">Confirm Password:</label>
+                        <div class="col-lg-9">
+                          <input type="password" class="form-control" name="confirm_password" id="inputConfirmPassword" placeholder="Confirm Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-offset-9 col-lg-3">
+                          <button type="submit" name="creatUser" class="btn btn-primary">Register</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>--><!-- register form -->
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- content -->
+
+    </div><!-- container -->
 {% endblock %}
